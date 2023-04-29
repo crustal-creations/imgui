@@ -19,5 +19,5 @@ vec4 to_linear(vec4 sRGB)
 
 void main()
 {
-    fColor = to_linear(In.Color) * to_linear(texture(sTexture, In.UV.st));
+    fColor = to_linear(In.Color) * texture(sTexture, In.UV.st);
 }
